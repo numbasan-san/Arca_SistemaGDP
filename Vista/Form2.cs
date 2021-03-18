@@ -40,5 +40,10 @@ namespace Sistema_de_gestion_de_productos.Vista
         {
 
         }
+
+        private void BTN_Agregar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

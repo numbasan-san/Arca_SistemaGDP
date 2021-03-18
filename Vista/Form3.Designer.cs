@@ -46,9 +46,9 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.CBX_Estado = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.DGV_CategoriaData = new System.Windows.Forms.DataGridView();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TXT_CatedoriaID = new System.Windows.Forms.TextBox();
             this.BTN_Buscar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -161,6 +161,7 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.TXT_Nombre.Name = "TXT_Nombre";
             this.TXT_Nombre.Size = new System.Drawing.Size(153, 27);
             this.TXT_Nombre.TabIndex = 9;
+            this.TXT_Nombre.TextChanged += new System.EventHandler(this.TXT_Nombre_TextChanged);
             // 
             // label6
             // 
@@ -241,13 +242,13 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.DGV_CategoriaData.Size = new System.Drawing.Size(409, 292);
             this.DGV_CategoriaData.TabIndex = 11;
             // 
-            // Column8
+            // Column1
             // 
-            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Column8.HeaderText = "Estado";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 84;
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
+            this.Column1.HeaderText = "ID";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 24;
             // 
             // Column2
             // 
@@ -256,13 +257,13 @@ namespace Sistema_de_gestion_de_productos.Vista
             this.Column2.Name = "Column2";
             this.Column2.Width = 300;
             // 
-            // Column1
+            // Column8
             // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
-            this.Column1.HeaderText = "ID";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 24;
+            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Column8.HeaderText = "Estado";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 84;
             // 
             // TXT_CatedoriaID
             // 
